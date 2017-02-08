@@ -22,7 +22,7 @@ import java.util.ResourceBundle;
 /**
  * Created by Gleides on 26/01/2017.
  */
-public class FXMLAnchorPaneCadastroCliente implements Initializable {
+public class FXMLAnchorPaneCadastroClienteController implements Initializable {
     @FXML
     private TableView<Cliente> tblViewClientes;
     @FXML

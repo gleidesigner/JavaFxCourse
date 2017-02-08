@@ -1,12 +1,12 @@
-package br.com.softblue.bluekeeper.controller;
+package gleideveloper.com.br.softblue.bluekeeper.controller;
 
 import java.text.ParseException;
 import java.util.List;
 
-import br.com.softblue.bluekeeper.application.DataLoader;
-import br.com.softblue.bluekeeper.model.SenhaServico;
-import br.com.softblue.bluekeeper.util.MaskFieldUtil;
-import br.com.softblue.bluekeeper.util.StringUtils;
+import gleideveloper.com.br.softblue.bluekeeper.application.DataLoader;
+import gleideveloper.com.br.softblue.bluekeeper.model.SenhaServico;
+import gleideveloper.com.br.softblue.bluekeeper.util.MaskFieldUtil;
+import gleideveloper.com.br.softblue.bluekeeper.util.StringUtils;
 import javafx.application.Platform;
 import javafx.beans.property.SimpleBooleanProperty;
 import javafx.collections.FXCollections;
@@ -46,7 +46,7 @@ public class Controller {
 	private TextField tfCelular;
 
 	/**
-	 * Indica se o registro est� em modo de edi��o
+	 * Indica se o registro está em modo de edição
 	 */
 	private BooleanProperty editMode = new SimpleBooleanProperty();
 	
@@ -56,7 +56,7 @@ public class Controller {
 	private SenhaServico currentSenhaServico;
 
 	/**
-	 * M�todo chamado pelo JavaFX quando o controller � inicializado
+	 * Método chamado pelo JavaFX quando o controller é inicializado
 	 */
 	@FXML
 	private void initialize() {

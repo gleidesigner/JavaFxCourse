@@ -14,7 +14,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="380.0"
             prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="gleideveloper.com.br.javafxmvc.controller.FXMLAnchorPaneCadastroCliente">
+            fx:controller="gleideveloper.com.br.javafxmvc.controller.FXMLAnchorPaneCadastroClienteController">
     <children>
         <SplitPane dividerPositions="0.3996655518394649" layoutX="144.0" layoutY="65.0" prefHeight="400.0"
                    prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"

@@ -1,9 +1,9 @@
-package br.com.softblue.bluekeeper.application;
+package gleideveloper.com.br.softblue.bluekeeper.application;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import br.com.softblue.bluekeeper.model.SenhaServico;
+import gleideveloper.com.br.softblue.bluekeeper.model.SenhaServico;
 
 public class DataLoader {
 

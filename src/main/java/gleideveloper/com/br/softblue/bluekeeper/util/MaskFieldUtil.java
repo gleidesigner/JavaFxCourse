@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package br.com.softblue.bluekeeper.util;
+package gleideveloper.com.br.softblue.bluekeeper.util;
 
 import java.util.ArrayList;
 import java.util.Collections;

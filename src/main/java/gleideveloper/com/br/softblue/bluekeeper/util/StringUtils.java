@@ -1,4 +1,4 @@
-package br.com.softblue.bluekeeper.util;
+package gleideveloper.com.br.softblue.bluekeeper.util;
 
 /**
  * Utilitarios de Strings

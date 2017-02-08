@@ -1,4 +1,4 @@
-package br.com.softblue.bluekeeper.model;
+package gleideveloper.com.br.softblue.bluekeeper.model;
 
 import javafx.beans.property.IntegerProperty;
 import javafx.beans.property.SimpleIntegerProperty;
