@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+      prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="gleideveloper.com.br.javafxmvc.controller.FXMLVBoxCadastroClienteMain">
+    <children>
+        <MenuBar prefWidth="620.0">
+            <menus>
+                <Menu mnemonicParsing="false" text="Cadastros">
+                    <items>
+                        <MenuItem fx:id="menuItemCadastroCategoria" mnemonicParsing="false" text="Categorias"/>
+                        <MenuItem fx:id="menuItemCadastroCliente" mnemonicParsing="false"
+                                  onAction="#handleMenuItemCadastrosClientes" text="Clientes"/>
+                        <MenuItem mnemonicParsing="false" text="Produtos"/>
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Processos">
+                    <items>
+                        <MenuItem fx:id="menuItemProcessoVenda" mnemonicParsing="false" text="Vendas"/>
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Gráficos">
+                    <items>
+                        <MenuItem fx:id="menuItemGraficoVendaMes" mnemonicParsing="false" text="Vendas por Mês"/>
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Relatórios">
+                    <items>
+                        <MenuItem fx:id="menuItemRelatorioQtdeProdutoEstoque" mnemonicParsing="false"
+                                  text="Qdte de Produtos em Estoque"/>
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+        <AnchorPane fx:id="anchoPane" prefHeight="380.0" prefWidth="600.0"/>
+    </children>
+</VBox>
