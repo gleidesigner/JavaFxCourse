@@ -1,4 +1,6 @@
-package templatemvc;/**
+package gleideveloper.com.br.softblue.bluekeeperpratica;
+
+/**
  * Created by gleidesilva on 17/01/17.
  */
 
@@ -12,7 +14,7 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Pane root = FXMLLoader.load(getClass().getResource("Layout.fxml"));
+        Pane root = FXMLLoader.load(getClass().getResource("../../../../../../resources/fxml/softblue/LayoutPratica.fxml"));
         //test merger feito no P4
         Scene scene = new Scene(root, 850,400);
         primaryStage.setScene(scene);

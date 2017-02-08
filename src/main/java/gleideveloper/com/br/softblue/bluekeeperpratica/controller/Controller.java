@@ -1,7 +1,7 @@
-package templatemvc.controller;
+package gleideveloper.com.br.softblue.bluekeeperpratica.controller;
 
-import templatemvc.DataLoader;
-import templatemvc.model.SenhaServico;
+import gleideveloper.com.br.softblue.bluekeeperpratica.DataLoader;
+import gleideveloper.com.br.softblue.bluekeeperpratica.model.SenhaServico;
 import javafx.application.Platform;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;

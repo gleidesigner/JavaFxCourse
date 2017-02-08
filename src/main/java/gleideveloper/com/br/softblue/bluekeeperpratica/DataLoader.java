@@ -1,6 +1,6 @@
-package templatemvc;
+package gleideveloper.com.br.softblue.bluekeeperpratica;
 
-import templatemvc.model.SenhaServico;
+import gleideveloper.com.br.softblue.bluekeeperpratica.model.*;
 
 import java.util.ArrayList;
 import java.util.List;

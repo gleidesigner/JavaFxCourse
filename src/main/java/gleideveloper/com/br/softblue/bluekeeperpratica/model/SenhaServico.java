@@ -1,4 +1,4 @@
-package templatemvc.model;
+package gleideveloper.com.br.softblue.bluekeeperpratica.model;
 
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;

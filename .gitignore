@@ -1,5 +1,5 @@
 # Remove linha gitignore
 /.idea/
-pom.xml
 target/
-/JavaFxCourse.iml
+/Javafxcourse.iml
+

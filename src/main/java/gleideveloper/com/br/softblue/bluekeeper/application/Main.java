@@ -14,7 +14,7 @@ public class Main extends Application {
 	public void start(Stage primaryStage) throws Exception {
 		
 		// Carrega o layout FXML
-		Pane root = FXMLLoader.load(getClass().getResource("../view/Layout.fxml"));
+		Pane root = FXMLLoader.load(getClass().getResource("../softblue/LayoutPratica.fxml"));
 		
 		// Cria a cena
 		Scene scene = new Scene(root, 850, 400);

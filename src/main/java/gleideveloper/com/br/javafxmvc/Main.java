@@ -1,4 +1,5 @@
-package gleideveloper.com.br.javafxmvc;/**
+package gleideveloper.com.br.javafxmvc;
+/**
  * Created by Gleides on 26/01/2017.
  */
 
