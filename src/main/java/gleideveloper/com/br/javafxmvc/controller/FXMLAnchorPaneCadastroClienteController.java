@@ -1,19 +1,24 @@
 package gleideveloper.com.br.javafxmvc.controller;
 
+import gleideveloper.com.br.javafxmvc.model.dao.ClienteDAO;
+import gleideveloper.com.br.javafxmvc.model.database.Database;
+import gleideveloper.com.br.javafxmvc.model.database.DatabaseFactory;
+import gleideveloper.com.br.javafxmvc.model.domain.Cliente;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
-import gleideveloper.com.br.javafxmvc.model.dao.ClienteDAO;
-import gleideveloper.com.br.javafxmvc.model.database.Database;
-import gleideveloper.com.br.javafxmvc.model.database.DatabaseFactory;
-import gleideveloper.com.br.javafxmvc.model.domain.Cliente;
+import javafx.scene.layout.AnchorPane;
+import javafx.stage.Stage;
 
+import java.io.IOException;
 import java.net.URL;
 import java.sql.Connection;
 import java.util.List;
@@ -84,5 +89,41 @@ public class FXMLAnchorPaneCadastroClienteController implements Initializable {
         obsListClientes = FXCollections.observableArrayList(listClientes);
         tblViewClientes.setItems(obsListClientes);
 
+    }
+    @FXML
+    public void handleBtnInserir() throws IOException {
+        Cliente cliente = new Cliente();
+        boolean isClickedBtnInserir = showFXMLAnchorPaneCadastroClienteDialog(cliente);
+        if (isClickedBtnInserir){
+            clienteDAO.inserir(cliente);
+            loadTableViewCliente();
+        }
+    }
+    @FXML
+    public void handleBtnRemover() {
+    }
+
+    @FXML
+    public void handleBtnAlterar() {
+    }
+
+    private boolean showFXMLAnchorPaneCadastroClienteDialog(Cliente cliente)throws IOException {
+        FXMLLoader loader = new FXMLLoader();
+        loader.setLocation(FXMLAnchorPaneCadastroClienteDialogController.class.getResource("fxml/javafxmvc/FXMLAnchorPaneCadastroClienteDialog.fxml"));
+        AnchorPane page = (AnchorPane)loader.load();
+
+        //Criando um Estágio de Dialog (Stage Dialog)
+        Stage dialogStage = new Stage();
+        dialogStage.setTitle("Cadastro de Cliente");
+        Scene scene = new Scene(page);
+        dialogStage.setScene(scene);
+
+        FXMLAnchorPaneCadastroClienteDialogController controllerDialog = loader.getController();
+        controllerDialog.setDialogStage(dialogStage);
+        controllerDialog.setCliente(cliente);
+
+        dialogStage.showAndWait();
+
+        return controllerDialog.getClickedBtnConfirma();
     }
 }
