@@ -1,4 +1,4 @@
-package gleideveloper.com.br.javafxmvc.model.database;
+package gleideveloper.com.br.databasefactory;
 
 import com.mysql.fabric.jdbc.FabricMySQLDriver;
 
@@ -31,8 +31,8 @@ public class DatabaseMySQL implements Database {
             return this.connection;
 
         } catch (SQLException ex) {
-            Logger.getLogger(DatabasePostgreSQL.class.getName()).log(Level.SEVERE, null, ex);
-            return null;
+                Logger.getLogger(DatabasePostgreSQL.class.getName()).log(Level.SEVERE, null, ex);
+                return null;
         }
     }
 

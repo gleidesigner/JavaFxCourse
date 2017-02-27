@@ -3,6 +3,6 @@
 target/
 /Javafxcourse.iml
 /src/main/resources/fxml/softblue/
-/src/main/resources/fxml/materialdesing/
 /src/main/java/gleideveloper/com/br/softblue/
-/src/main/java/gleideveloper/com/br/materialdesign/
+/src/main/java/gleideveloper/com/br/javafxmvc/
+/src/main/resources/fxml/javafxmvc/

@@ -1,8 +1,11 @@
 package gleideveloper.com.br.javafxmvc.controller;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Alert;
+import javafx.scene.control.Button;
 import javafx.scene.control.MenuItem;
 import javafx.scene.layout.AnchorPane;
 
@@ -14,6 +17,7 @@ import java.util.ResourceBundle;
  * Created by Gleides on 26/01/2017.
  */
 public class FXMLVBoxCadastroClienteMain implements Initializable{
+    public Button btnHello;
     @FXML
     private  MenuItem menuItemProcessoVenda;
     @FXML
@@ -38,4 +42,11 @@ public class FXMLVBoxCadastroClienteMain implements Initializable{
         anchoPane.getChildren().setAll(anchorPaneChild);
     }
 
+    public void btnHelloWord(ActionEvent actionEvent) {
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("Hello world");
+        alert.setHeaderText("world");
+        alert.setContentText("Ola mundo!");
+        alert.showAndWait();
+    }
 }

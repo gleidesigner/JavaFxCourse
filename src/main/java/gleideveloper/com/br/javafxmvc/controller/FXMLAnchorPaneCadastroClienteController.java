@@ -1,8 +1,8 @@
 package gleideveloper.com.br.javafxmvc.controller;
 
 import gleideveloper.com.br.javafxmvc.model.dao.ClienteDAO;
-import gleideveloper.com.br.javafxmvc.model.database.Database;
-import gleideveloper.com.br.javafxmvc.model.database.DatabaseFactory;
+import gleideveloper.com.br.databasefactory.Database;
+import gleideveloper.com.br.databasefactory.DatabaseFactory;
 import gleideveloper.com.br.javafxmvc.model.domain.Cliente;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;

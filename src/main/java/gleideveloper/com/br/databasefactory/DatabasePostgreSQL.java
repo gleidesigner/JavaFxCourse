@@ -1,4 +1,4 @@
-package gleideveloper.com.br.javafxmvc.model.database;
+package gleideveloper.com.br.databasefactory;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

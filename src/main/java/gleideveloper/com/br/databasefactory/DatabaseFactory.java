@@ -1,4 +1,4 @@
-package gleideveloper.com.br.javafxmvc.model.database;
+package gleideveloper.com.br.databasefactory;
 
 public class DatabaseFactory {
     public static Database getDatabase(String nome){
