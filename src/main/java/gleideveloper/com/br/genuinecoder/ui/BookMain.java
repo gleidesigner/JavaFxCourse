@@ -12,7 +12,7 @@ import javafx.stage.Stage;
 public class BookMain extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("/fxml/genuinecoder/FXMLControllerBook.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/fxml/genuinecoder/book_controller.fxml"));
         Scene scene = new Scene(root);
         primaryStage.setScene(scene);
         primaryStage.show();

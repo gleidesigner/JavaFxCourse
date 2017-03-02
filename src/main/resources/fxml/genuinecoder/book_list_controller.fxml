@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 
 <AnchorPane fx:id="rootPaneListBook" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass"
-            stylesheets="@../../styles/genuinecoder/booklist.css" xmlns="http://javafx.com/javafx/8.0.111"
+            stylesheets="@../../styles/genuinecoder/book_list.css" xmlns="http://javafx.com/javafx/8.0.111"
             xmlns:fx="http://javafx.com/fxml/1"
             fx:controller="gleideveloper.com.br.genuinecoder.ui.listbook.BookListController">
     <children>

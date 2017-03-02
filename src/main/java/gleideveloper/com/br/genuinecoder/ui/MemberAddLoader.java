@@ -1,6 +1,4 @@
-package gleideveloper.com.br.genuinecoder.ui;/**
- * Created by Gleides on 10/02/2017.
- */
+package gleideveloper.com.br.genuinecoder.ui;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -10,7 +8,10 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class BookListLoader extends Application {
+/**
+ * Created by Gleides on 01/03/2017.
+ */
+public class MemberAddLoader extends Application {
 
     public static void main(String[] args) {
         launch(args);
@@ -18,7 +19,7 @@ public class BookListLoader extends Application {
 
     @Override
     public void start(Stage primaryStage) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("/fxml/genuinecoder/book_list_controller.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/fxml/genuinecoder/add_member.fxml"));
 
         Scene scene = new Scene(root);
         primaryStage.setScene(scene);

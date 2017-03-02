@@ -20,6 +20,34 @@ public final class DatabaseHandler {
         database = DatabaseFactory.getDatabase("mysql");
         connection = database.conectar();
         setupBookTable();
+        setupMember();
+    }
+
+    private void setupMember() {
+        String TABLE_NAME = "MEMBER";
+        String sql = null;
+        try {
+            stmt = connection.createStatement();
+            DatabaseMetaData dbm = connection.getMetaData();
+            ResultSet tables = dbm.getTables(null, null, TABLE_NAME.toUpperCase(), null);
+
+            if (tables.next()) {
+                System.out.println("Table " + TABLE_NAME + " already exits. Ready to go!");
+            } else {
+                sql = "CREATE TABLE " + TABLE_NAME + "("
+                        + " id VARCHAR(200) PRIMARY KEY,\n"
+                        + " name VARCHAR(200),\n"
+                        + " mobile VARCHAR(20),\n"
+                        + " email VARCHAR(100),\n"
+                        + ")";
+                stmt.execute(sql);
+            }
+        } catch (SQLException e) {
+            System.out.println(sql);
+            System.err.println(e.getMessage() + " - setupDatabase");
+
+        } finally {
+        }
     }
 
     public void setupBookTable() {
@@ -31,7 +59,7 @@ public final class DatabaseHandler {
             ResultSet tables = dbm.getTables(null, null, TABLE_NAME.toUpperCase(), null);
 
             if (tables.next()) {
-                System.out.println("Table " + TABLE_NAME + "already exits. Ready to go!");
+                System.out.println("Table " + TABLE_NAME + " already exits. Ready to go!");
             } else {
                 sql = "CREATE TABLE " + TABLE_NAME + "("
                         + " id VARCHAR(200) PRIMARY KEY,\n"

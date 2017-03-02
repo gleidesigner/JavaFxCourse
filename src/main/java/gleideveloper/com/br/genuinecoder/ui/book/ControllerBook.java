@@ -31,13 +31,8 @@ public class ControllerBook implements Initializable{
     @FXML
     private JFXTextField publisher;
     @FXML
-    private JFXButton save;
-    @FXML
-    private JFXButton cancel;
-
-    DatabaseHandler databaseHandler;
-    @FXML
     private AnchorPane rootPane;
+    DatabaseHandler databaseHandler;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
