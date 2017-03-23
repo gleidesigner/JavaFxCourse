@@ -19,7 +19,7 @@ public class MemberAddLoader extends Application {
 
     @Override
     public void start(Stage primaryStage) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("/fxml/genuinecoder/add_member.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/fxml/genuinecoder/member_add_controller.fxml"));
 
         Scene scene = new Scene(root);
         primaryStage.setScene(scene);

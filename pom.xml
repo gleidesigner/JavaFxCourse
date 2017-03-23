@@ -76,7 +76,7 @@
                         </goals>
                         <configuration>
                             <executable>${java.home}/bin/java</executable>
-                            <commandlineArgs>${runfx.args}</commandlineArgs>
+                            <!--<commandlineArgs>${runfx.args}</commandlineArgs>-->
                         </configuration>
                     </execution>
                 </executions>
@@ -110,6 +110,7 @@
 
 
     <dependencies>
+
         <!-- MigLayout -->
         <dependency>
             <groupId>com.miglayout</groupId>
@@ -135,7 +136,7 @@
         <dependency>
             <groupId>com.jfoenix</groupId>
             <artifactId>jfoenix</artifactId>
-            <version>1.1.0</version>
+            <version>1.2.0</version>
         </dependency>
 
     </dependencies>

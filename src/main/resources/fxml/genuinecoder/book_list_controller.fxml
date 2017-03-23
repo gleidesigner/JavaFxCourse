@@ -7,9 +7,9 @@
 <AnchorPane fx:id="rootPaneListBook" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass"
             stylesheets="@../../styles/genuinecoder/book_list.css" xmlns="http://javafx.com/javafx/8.0.111"
             xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="gleideveloper.com.br.genuinecoder.ui.listbook.BookListController">
+            fx:controller="gleideveloper.com.br.genuinecoder.ui.book.BookListController">
     <children>
-        <TableView fx:id="tableViewListBook" layoutX="29.0" layoutY="55.0" prefHeight="400.0" prefWidth="600.0"
+        <TableView fx:id="tableViewBookList" layoutX="29.0" layoutY="55.0" prefHeight="400.0" prefWidth="600.0"
                    AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
                    AnchorPane.topAnchor="0.0">
             <columns>

@@ -2,6 +2,7 @@ package gleideveloper.com.br.genuinecoder.database;
 
 import gleideveloper.com.br.databasefactory.Database;
 import gleideveloper.com.br.databasefactory.DatabaseFactory;
+import gleideveloper.com.br.genuinecoder.ui.util.MessageAlert;
 import javafx.scene.control.Alert;
 
 import java.sql.*;
@@ -9,18 +10,23 @@ import java.sql.*;
 /**
  * Created by Gleides on 08/02/2017.
  */
-public final class DatabaseHandler {
+public final class DatabaseHandler extends MessageAlert {
 
+    private static DatabaseHandler handler;
     //Atributo para manipulação de dados
     private static Database database;
     private static Connection connection;
     private static Statement stmt;
 
-    public DatabaseHandler() {
+    private DatabaseHandler() {
         database = DatabaseFactory.getDatabase("mysql");
         connection = database.conectar();
         setupBookTable();
         setupMember();
+    }
+
+    public static DatabaseHandler getInstance(){
+        return (handler == null ? new DatabaseHandler() : handler);
     }
 
     private void setupMember() {
@@ -38,7 +44,7 @@ public final class DatabaseHandler {
                         + " id VARCHAR(200) PRIMARY KEY,\n"
                         + " name VARCHAR(200),\n"
                         + " mobile VARCHAR(20),\n"
-                        + " email VARCHAR(100),\n"
+                        + " email VARCHAR(100)"
                         + ")";
                 stmt.execute(sql);
             }
@@ -97,11 +103,8 @@ public final class DatabaseHandler {
             stmt.execute(query);
             return true;
         } catch (SQLException e) {
-            Alert alert = new Alert(Alert.AlertType.ERROR);
-            alert.setHeaderText(null);
-            alert.setContentText("Error " + e.getMessage());
-            //System.out.println("Exception at execQuery: dataHandle " + e.getLocalizedMessage());
-            alert.showAndWait();
+            //Metodo Alert herdado da classe abastrata MessageAlert
+            getMsgAlert(Alert.AlertType.ERROR, "Error occured" + e.getMessage());
             return false;
         } finally {
         }
