@@ -47,11 +47,11 @@ public class MainController extends MessageAlert implements Initializable {
     public void initialize(URL location, ResourceBundle resources) {
         JFXDepthManager.setDepth(book_info, 1);
         JFXDepthManager.setDepth(member_info, 1);
+        databaseHandler = DatabaseHandler.getInstance();
     }
 
     public void loadAddMember(ActionEvent actionEvent) {
         loadWindow("/fxml/genuinecoder/member_add_controller.fxml","Add New Member");
-        databaseHandler = DatabaseHandler.getInstance();
     }
 
     public void loadAddBook(ActionEvent actionEvent) {
@@ -84,7 +84,7 @@ public class MainController extends MessageAlert implements Initializable {
 
     public void loadBookInfo(ActionEvent actionEvent) {
         String id = bookIDInput.getText();
-        String  sql =  "SELECT * FROM BOOK WHERE id = 'B001'";
+        String  sql =  "SELECT * FROM BOOK WHERE id = '" + id +"'";
         ResultSet rs = databaseHandler.execQuery(sql);
 
         Boolean flag = false;
