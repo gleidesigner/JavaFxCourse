@@ -1,0 +1,19 @@
+<usuarios xmlns="http://cursojava"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://cursojava usuarios.xsd">
+    <usuario id="1">
+        <nome>Jose da Silva</nome>
+        <idade>30</idade>
+        <email>jose.silva@gmail.com</email>
+    </usuario>
+    <usuario id="2">
+        <nome>Maria de Souza</nome>
+        <idade>25</idade>
+        <email>maria.souza@gmail.com</email>
+    </usuario>
+    <usuario id="3">
+        <nome>Joao Batista</nome>
+        <idade>33</idade>
+        <email>j.batista@gmail.com</email>
+    </usuario>
+</usuarios>
