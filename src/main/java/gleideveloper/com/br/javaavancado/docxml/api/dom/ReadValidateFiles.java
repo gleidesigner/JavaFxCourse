@@ -1,4 +1,4 @@
-package gleideveloper.com.br.javaavancado.docxml;
+package gleideveloper.com.br.javaavancado.docxml.api.dom;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -15,9 +15,9 @@ import javax.xml.validation.Validator;
 /**
  * Created by gleides.s on 15/03/2017.
  */
-public class MainXml {
+public class ReadValidateFiles {
     public static void main(String []args)throws Exception{
-        String pathFile = MainXml.class.getResource("/xml/usuarios.xml").getPath();
+        String pathFile = ReadValidateFiles.class.getResource("/xml/usuarios.xml").getPath();
 
         SchemaFactory schemaFactory = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
         Schema schema = schemaFactory.newSchema();
