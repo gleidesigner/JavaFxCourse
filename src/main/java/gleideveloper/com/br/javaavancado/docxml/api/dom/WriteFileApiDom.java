@@ -16,7 +16,7 @@ import java.io.FileWriter;
 /**
  * Created by gleidesilva on 27/03/17.
  */
-public class WriteFiles {
+public class WriteFileApiDom {
     public static void main(String []args)throws Exception{
 
         DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();

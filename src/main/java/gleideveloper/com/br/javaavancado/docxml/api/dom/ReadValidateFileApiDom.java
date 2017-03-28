@@ -15,9 +15,9 @@ import javax.xml.validation.Validator;
 /**
  * Created by gleides.s on 15/03/2017.
  */
-public class ReadValidateFiles {
+public class ReadValidateFileApiDom {
     public static void main(String []args)throws Exception{
-        String pathFile = ReadValidateFiles.class.getResource("/xml/usuarios.xml").getPath();
+        String pathFile = ReadValidateFileApiDom.class.getResource("/xml/usuarios.xml").getPath();
 
         SchemaFactory schemaFactory = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
         Schema schema = schemaFactory.newSchema();
