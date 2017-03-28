@@ -2,6 +2,7 @@ package gleideveloper.com.br.javaavancado.docxml.api.sax;
 
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
+import org.xml.sax.SAXParseException;
 import org.xml.sax.helpers.DefaultHandler;
 
 /**
@@ -26,5 +27,20 @@ public class XMLHandler extends DefaultHandler {
     @Override
     public void characters(char[] ch, int start, int length) throws SAXException {
         sb.append(ch, start, length);
+    }
+
+    @Override
+    public void warning(SAXParseException e) throws SAXException {
+        throw e;
+    }
+
+    @Override
+    public void error(SAXParseException e) throws SAXException {
+        throw e;
+    }
+
+    @Override
+    public void fatalError(SAXParseException e) throws SAXException {
+        throw e;
     }
 }
