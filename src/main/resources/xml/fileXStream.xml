@@ -1,0 +1,27 @@
+<Fornecedor>
+  <nome>Informatica &amp; CIA</nome>
+  <nomeFantasia>Informatica</nomeFantasia>
+  <cnpj>23423452345235</cnpj>
+  <insest>4234346463</insest>
+  <email>gleidesigner@gmail.com</email>
+  <telefone>92 99243-2432</telefone>
+  <celular>92 3654-1241</celular>
+  <dataCadastro>01/04/2017</dataCadastro>
+  <endereco>
+    <rua>Av. Das Torres</rua>
+    <bairro>Centro</bairro>
+    <cidade>Manaus</cidade>
+    <estado>Amazonas</estado>
+    <cep>69085-288</cep>
+  </endereco>
+  <produtos>
+    <produto>
+      <codigo>1</codigo>
+      <nome>Mouse</nome>
+    </produto>
+    <produto>
+      <codigo>2</codigo>
+      <nome>Notebook</nome>
+    </produto>
+  </produtos>
+</Fornecedor>
